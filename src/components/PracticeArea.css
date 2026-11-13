@@ -1,0 +1,150 @@
+.practice-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.practice-card {
+  background-color: var(--panel-bg);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.practice-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.accent-line {
+  height: 4px;
+  width: 40px;
+  background-color: var(--accent-orange);
+  border-radius: var(--radius-full);
+}
+
+.practice-title {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.native-audio-section {
+  background-color: rgba(255, 255, 255, 0.02);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 2rem;
+  border: 1px solid var(--border-color);
+}
+
+.native-audio-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.native-audio-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.native-play-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  border: 1px solid var(--accent-orange);
+  color: var(--accent-orange);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.native-play-btn:hover {
+  background-color: rgba(217, 93, 30, 0.1);
+}
+
+.native-play-btn.female {
+  border-color: #4caf50;
+  color: #4caf50;
+}
+
+.native-play-btn.female:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.roman-input {
+  flex: 1;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color var(--transition-normal);
+}
+
+.roman-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+}
+
+.roman-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.check-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0 1.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+}
+
+.check-btn:not(:disabled):hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  border-color: var(--border-focus);
+}
+
+.tip-card {
+  background-color: #fff4ed; /* Very light orange from the screenshot */
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.5rem;
+  display: flex;
+  gap: 1rem;
+  border-left: 4px solid var(--accent-orange);
+  color: #333333;
+}
+
+.tip-icon {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.1rem;
+}
+
+.tip-content {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.tip-content strong {
+  color: var(--accent-orange);
+  margin-right: 0.25rem;
+}

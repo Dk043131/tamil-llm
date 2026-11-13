@@ -1,0 +1,38 @@
+.level-selector {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.level-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.level-btn:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-color: var(--border-focus);
+  color: var(--text-primary);
+}
+
+.level-btn.active {
+  background-color: var(--panel-bg);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.level-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
